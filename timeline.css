@@ -30,6 +30,7 @@ p{
 button{
     color: white;
     background: none;
+    padding-bottom: 6px;
 }
 .date1{
    
@@ -44,17 +45,18 @@ button{
     background-color:#305BC9;
     border-radius: 50px;
     width: 100px;
-    height: 25px;
+    /* height: 25px; */
     left:41%;
     margin:2px;
     padding:0px ;
     font-size: 18px;
     border: none;
+
 }
 .date2{
   
     width: 100px;
-    height: 26px;
+    /* height: 26px; */
     margin:2px;
    padding: 0;
     right: -42%;
@@ -64,10 +66,10 @@ button{
     border:2px solid white;
     border-radius: 50px;
     width: 100px;
-    height: 26px;
+    /* height: 26px; */
    
-    margin:2px;
-   padding: 0;
+    /* margin:2px; */
+    padding: 0px 10px;
     right: -42%;
     font-size: 18px;
 }
@@ -84,7 +86,7 @@ button{
     border:2px solid white;
     border-radius: 50px;
     width: 100px;
-    height: 26px;
+    /* height: 26px; */
     margin:2px;
    padding: 0;
    left:41%;
@@ -311,19 +313,20 @@ a{
         left:6px
     }
     .timeline ul li:nth-child(odd) .illustration{
-        top: 170px;
+        top: 180px;
         left:60px
     }
     .timeline ul li:nth-child(even) .illustration{
-        top: 170px;
+        top: 160px;
         left:50px
     }
+    
     .timeline ul li:nth-child(3) .illustration{
-        top: 140px;
+        top: 150px;
         left:60px
     }
     .timeline ul li:nth-child(4) .illustration{
-        top: 150px;
+        top: 160px;
         left:50px
     }
     .timeline ul li:nth-child(5) .illustration{
@@ -345,5 +348,9 @@ a{
     }
     .p2{
         left:2%;
+    }
+    .timeline ul li:nth-child(1) .first{
+        top: 145px;
+        left:60px
     }
 } 
