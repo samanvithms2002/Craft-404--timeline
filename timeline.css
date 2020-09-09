@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+     
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    background-color:#012656;
+    font-family: "Work Sans",sans-serif;
+    color: white;
+    /* width: auto!important; */
+     overflow-x: hidden;
+}
+.main{
+    margin-top:20px;
+}
+h1{
+    font-weight: bolder;
+}
+p{
+    font-size:24px
+}
+button{
+    color: white;
+    background: none;
+}
+.date1{
+   
+    width: 100px;
+    height: 25px;
+    left:41%;
+    margin:2px;
+    padding:0px ;
+    font-size: 18px;
+}
+.btn1{
+    background-color:#305BC9;
+    border-radius: 50px;
+    width: 100px;
+    height: 25px;
+    left:41%;
+    margin:2px;
+    padding:0px ;
+    font-size: 18px;
+    border: none;
+}
+.date2{
+  
+    width: 100px;
+    height: 26px;
+    margin:2px;
+   padding: 0;
+    right: -42%;
+    font-size: 18px;
+}
+.btn2{
+    border:2px solid white;
+    border-radius: 50px;
+    width: 100px;
+    height: 26px;
+   
+    margin:2px;
+   padding: 0;
+    right: -42%;
+    font-size: 18px;
+}
+.date22{
+   
+    width: 100px;
+    height: 26px;
+    margin:2px;
+   padding: 0;
+   left:41%;
+    font-size: 18px;
+}
+.btn22{
+    border:2px solid white;
+    border-radius: 50px;
+    width: 100px;
+    height: 26px;
+    margin:2px;
+   padding: 0;
+   left:41%;
+    font-size: 18px;
+}
+.date12{
+  
+    width: 100px;
+    height: 25px;
+    right: -42%;
+    margin:2px;
+    padding:0px ;
+    font-size: 18px;
+}
+.btn12{
+    background-color: #305BC9;
+    border-radius: 50px;
+    width: 100px;
+    height: 25px;
+    right: -42%;
+    margin:2px;
+    padding:0px ;
+    font-size: 18px;
+    border: none;
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    padding: 40px 0;
+    margin: 50px auto;
+    box-sizing: border-box;
+  }
+  .timeline::before{
+      content: '';
+      position: absolute;
+      left: 50%;
+      width:4px;
+      height: 100%;
+      background-color: #305BC9;
+  }
+  .timeline ul{
+      margin: 0;
+      padding:0 ;
+  }
+  .timeline ul li{
+      line-height: normal;
+      position: relative;
+      width: 50%;
+      margin-top: 150px;
+      padding: 20px 40px;
+      box-sizing: border-box;
+  }
+  .timeline ul li:nth-child(odd){
+      float: left;
+      text-align: left;
+      clear: both;
+  }
+  .timeline ul li:nth-child(even){
+      float: right;
+      text-align:left;
+      clear: both;
+  }
+  .content{
+      padding-bottom: 20px;
+  }
+  .timeline ul li:nth-child(odd)::before{
+      content: '';
+      position: absolute;
+      top: 24px;
+      right:  -17px;
+      width: 30px;
+      height: 30px;
+      background-color: #012656;
+      border: 4px solid #305BC9;
+     
+      border-radius: 50%;
+      border-radius: 50%;
+  }
+  .timeline ul li:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left:  -14px;
+    width: 30px;
+    height: 30px;
+    background-color: #012656;
+    border: 4px solid #305BC9;
+   
+    border-radius: 50%;
+   
+}
+.timeline ul li:nth-child(odd) .illustration{
+    position: absolute;
+    top: -10px;
+    right: -350px;
+   
+}
+.timeline ul li:nth-child(even) .illustration{
+    position: absolute;
+    top: -20px;
+    left: -350px;
+    margin-bottom:20px ;
+    padding-bottom: 20px;
+}
+.timeline ul li:nth-child(even) .illustration img{
+    margin: 10px;
+    top: 2px;
+    width:"150px";
+     height:"150px";
+}
+
+/* .schedule .next{
+    background-color: #305BC9;
+    width: 30%;
+    height: 25px;
+    margin-top: 100px;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 20px;
+    padding: 0;
+
+} */
+#btn3{
+    background-color: #305BC9;
+    width: 30%;
+    height: 25px;
+    margin-top: 100px;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 20px;
+    padding: 0;
+    border: none;
+}
+img{
+    width: 250px;
+    height:250px
+
+}
+a{
+    color: white;
+}
+
+.results{
+    display: grid;
+    background-color: #305BC9;
+    border-radius: 5px;
+   margin-top: 50px;
+   margin-bottom: 25px;
+   
+    height:100%;
+    box-shadow: 0px 24px 80px 0.35 rgba(0, 0, 0, 0.35) ;
+
+}
+.text{
+    height: 50px;
+  margin-top: 25px;
+  margin-bottom:25px;
+
+ 
+}
+.white{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    color: #305BC9;
+    border-radius: 5px;
+    box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.5) ;
+    padding:25px;
+   width: 80%;
+}
+@media(max-width:1000px){
+    .top{
+        width: 100%;
+    }
+    .timeline{
+        width: 100%;
+        
+    }
+    .timeline ul li:nth-child(odd) .illustration{
+        top:50px;
+    }
+    .timeline ul li .illustration img{
+        width:"150px";
+        height:"150px";
+    }
+} 
+@media(max-width:767px){
+   
+   .title .row h1{
+        text-align: center;
+        font-size:50px ;
+    }
+    .top{
+        width: 100%;
+    }
+    .timeline ul li .illustration img{
+        width:"75px";
+        height:"75px";
+    }
+    .timeline{
+        
+        width: 100%;
+        
+    }
+    .timeline::before{
+        left: 20px;
+    }
+    .timeline ul li{
+        margin-top:70px;
+    }
+    .timeline li:nth-child(even),
+    .timeline li:nth-child(odd){
+        width:100%;
+        text-align:left;
+        padding-left:50px;
+        padding-bottom: 50px;
+    }
+    
+    .timeline ul li:nth-child(odd)::before{
+        
+        left:6px;
+    }
+    .timeline ul li:nth-child(even)::before{
+        left:6px
+    }
+    .timeline ul li:nth-child(odd) .illustration{
+        top: 170px;
+        left:60px
+    }
+    .timeline ul li:nth-child(even) .illustration{
+        top: 170px;
+        left:50px
+    }
+    .timeline ul li:nth-child(3) .illustration{
+        top: 140px;
+        left:60px
+    }
+    .timeline ul li:nth-child(4) .illustration{
+        top: 150px;
+        left:50px
+    }
+    .timeline ul li:nth-child(5) .illustration{
+        top: 150px;
+        left:60px
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    .results{
+        
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .white{
+        margin-left: 15px;
+    }
+    .p2{
+        left:2%;
+    }
+} 
