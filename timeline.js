@@ -72,4 +72,58 @@ btn3.addEventListener("click",function(){
   }
   
   );
- 
+  $(".btn1").click(function () {
+    $(".timeline:before .active").toggle();
+});
+//   //let element = document.querySelector('.timeline::before')
+//   //let ab = window.getComputedStyle(element, '::before');
+//   //$(window).scroll(function() {
+//     var windowpos = $(window).scrollTop();
+//    // $('.timeline:before').toggleClass('.timeline:before.active');
+//     // $('.progress-bar--circle').removeClass('active');
+
+//     if (windowpos > $('.top').offset().top) {
+//       //$('.timeline ul li button').removeClass('active');
+//       $('.timeline:before').toggleClass('.timeline:before .active');
+     
+//       //let style = window.getComputedStyle(element, '::before').setProperty("background-color","#305bc9");
+//     } //windowpos
+
+//     if (windowpos > $('#top1').offset().top) {
+//       // $('.timeline ul li button').removeClass('active');
+//      // element.style.backgroundColor="#305bc9";
+//       //$('.timeline').toggleClass('.active');
+//       // $('a[href$="#article-1"] .progress-bar--circle').addClass('active');
+//     }
+//     var scrollTop = $(window).scrollTop(),
+//     // document height
+//     docHeight = $(document).height(),
+//     // window height
+//     winHeight = $(window).height(),
+//     // percent of document scrolled
+//     scrollPercent = (scrollTop) / (docHeight - winHeight),
+//     scrollPercentRounded = Math.round(scrollPercent*100);
+
+// // incement progress bar as user scrolls
+// $('.timeline:before').css('height', scrollPercentRounded + '%');
+//   });
+const progressbar = document.querySelector('progress')
+const article = document.querySelector('.complete')
+
+let isScrolling = false
+
+document.addEventListener('scroll', (e) => isScrolling = true)
+
+render()
+
+function render() {
+	
+	requestAnimationFrame(render)
+	
+	if (!isScrolling) return
+	
+	progressbar.value = (window.scrollY )/ (article.offsetHeight - window.innerHeight) * 100
+	
+	isScrolling = false
+	
+}
