@@ -147,19 +147,28 @@
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
   } */
-
+  /* .prg-vrt{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  } */
+ 
   progress {
     -webkit-appearance: none;
     appearance: none;
-    /* position: fixed; */
-    top: 10px;
-    left: 50%;
-    bottom: 20%;
-    transform: translate(calc(-50% + 3px), calc(50vh - 50%)) rotate(90deg);
-    width: 100%;
+      display: flex;
+    align-items: flex-end;
+    /* /* bottom: 0; */
+    /* transform: translateX(calc(-50% + 3px)) rotate(90deg); */
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    position: relative; 
+    top: 50px;
+    /* Check this position once, I have given some temporary value */
+    left: 50.45%;
+    width: 1700px;
     height: 6px;
-   
-   
+    
   }
   .progresss
   {
