@@ -29,7 +29,7 @@ p {
 button {
   color: white;
   background: none;
-  padding-bottom: 6px;
+  /* padding-bottom: 6px; */
 }
 .date1 {
   width: 100px;
@@ -106,6 +106,7 @@ button {
   font-size: 18px;
   border: none;
 }
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -304,11 +305,13 @@ progress::-webkit-progress-value {
   height: 25px;
   margin-top: 100px;
   margin-left: 35%;
-  margin-right: 35%;
+  /* margin-right: 30%; */
   border-radius: 20px;
-  padding: 0;
+  padding-bottom: 5px;
   border: none;
+  font-size: medium;
 }
+
 img {
   width: 250px;
   height: 250px;
@@ -444,7 +447,11 @@ a {
   .progress2{
     width: 1700px;
   }
-  /* #btn3{
-    margin: 10px;
-  } */
+  #btn3{
+    font-size: medium;
+    margin-bottom: 50px;
+   
+    
+  }
+  
 }
