@@ -106,7 +106,9 @@ button {
   font-size: 18px;
   border: none;
 }
-
+.view{
+  margin-bottom: 20px;
+}
 .timeline {
   position: relative;
   max-width: 1200px;
