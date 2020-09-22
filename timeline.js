@@ -24,7 +24,7 @@ function render() {
 	if (!isScrolling) return
 	
 	progressbar.value = (window.scrollY )/ (article.offsetHeight - window.innerHeight) * 100
-	progressbar2.value=window.scrollY/(article2.offsetHeight-window.innerHeight)*100
+	progressbar2.value=(window.scrollY/(article2.offsetHeight-window.innerHeight)*100)-10
   isScrolling = false
   console.log(render.call)
 	
