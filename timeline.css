@@ -149,7 +149,7 @@ progress {
 
 progress::-webkit-progress-bar {
 
-  background-color: #41568b;
+  background-color:  #0c3175;
 }
 
 progress[value="100"]::-webkit-progress-bar {
