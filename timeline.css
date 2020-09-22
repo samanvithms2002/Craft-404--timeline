@@ -149,7 +149,7 @@ progress {
 
 progress::-webkit-progress-bar {
 
-  background-color:  #0c3175;
+  background-color: #0c3175;
 }
 
 progress[value="100"]::-webkit-progress-bar {
@@ -186,7 +186,7 @@ progress::-webkit-progress-value {
   position: relative;
   width: 50%;
   margin-top: 150px;
-  padding: 20px 80px;
+  padding: 20px 150px;
   box-sizing: border-box;
 }
 .timeline ul li:nth-child(odd) {
@@ -194,12 +194,14 @@ progress::-webkit-progress-value {
   text-align: left;
   clear: both;
   animation-name: odd;
+  padding-top:2px ;
 }
 .timeline ul li:nth-child(even) {
   float: right;
   text-align: left;
   clear: both;
   animation-name: even;
+  padding-top:2px ;
 }
 .content {
   padding-bottom: 20px;
@@ -329,7 +331,9 @@ a {
   .trophy img{
     display:none ;
   }
-  
+  .white{
+    width: 200px;
+  }
 }
 @media (max-width: 767px) {
   .title .row h1 {
