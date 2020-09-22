@@ -186,7 +186,7 @@ progress::-webkit-progress-value {
   position: relative;
   width: 50%;
   margin-top: 150px;
-  padding: 20px 150px;
+  padding: 20px 80px;
   box-sizing: border-box;
 }
 .timeline ul li:nth-child(odd) {
@@ -194,22 +194,25 @@ progress::-webkit-progress-value {
   text-align: left;
   clear: both;
   animation-name: odd;
-  padding-top:2px ;
+  /* padding-top:9px ; */
+  
 }
 .timeline ul li:nth-child(even) {
   float: right;
   text-align: left;
   clear: both;
   animation-name: even;
-  padding-top:2px ;
+  /* padding-top:9px ; */
+  
 }
 .content {
   padding-bottom: 20px;
+
 }
 .timeline ul li:nth-child(odd)::before {
   content: "";
   position: absolute;
-  top: 24px;
+  top: 40px;
   right: -17px;
   width: 30px;
   height: 30px;
@@ -223,7 +226,7 @@ progress::-webkit-progress-value {
 .timeline ul li:nth-child(even)::before {
   content: "";
   position: absolute;
-  top: 24px;
+  top: 40px;
   left: -14px;
   width: 30px;
   height: 30px;
@@ -304,6 +307,9 @@ a {
   padding-right: 0;
   right: -40px;
 }
+/* .content{
+  padding-top: 0;
+} */
 @media (max-width: 1000px) {
   .top {
     width: 100%;
@@ -430,8 +436,9 @@ a {
   #btn3{
     font-size: medium;
     width: 150px;
+    margin-top: 50px;
     margin-bottom: 50px;
-   margin-left: 100px;
+   margin-left: 80px;
     
   }
   .date1 , .btn1{
