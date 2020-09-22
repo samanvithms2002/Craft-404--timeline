@@ -434,8 +434,10 @@ a {
     width: 1700px;
   }
   #btn3{
-    font-size: medium;
-    width:40%;
+     font-size: larger;
+    height: 50px;
+    width: 40%;
+    border-radius: 25px;
     margin-top: 50px;
     margin-bottom: 50px;
    margin-left: 30%;
