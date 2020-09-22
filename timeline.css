@@ -22,7 +22,16 @@ body {
 }
 h1 {
   font-weight: bolder;
+   
 }
+
+
+.timelineHead{
+ width: fit-content;
+ margin-left: 44%;
+ background: linear-gradient(to bottom, #012656 0%,#012656 40%,#012656 40%,#305bc9 40%,#305bc9 100%);
+}
+
 p {
   font-size: 24px;
 }
@@ -31,6 +40,7 @@ button {
   background: none;
   /* padding-bottom: 6px; */
 }
+
 .date1 {
   width: 100px;
   height: 25px;
@@ -46,13 +56,13 @@ button {
   /* height: 25px; */
   left: 41%;
   margin: 2px;
-  padding: 0px;
+  /* padding: 0px; */
   font-size: 18px;
   border: none;
 }
 .date2 {
   width: 100px;
-  /* height: 26px; */
+  height: 26px;
   margin: 2px;
   padding: 0;
   right: -42%;
@@ -117,44 +127,6 @@ button {
   box-sizing: border-box;
 }
 
-/* .progress-bar{
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 4px;
-  height: 100%;
-  background-color: #8eaaf1;
-} */
-/* progress {
-  -webkit-appearance: none;
-  appearance: none;
-  position: fixed;
- 
-  background-color: #a1b4e2;
-  left: 50%;
-  transform: translate(calc(-50% + 3px), calc(50vh - 50%)) rotate(90deg);
-  width: 100vh;
-  height: 6px;
-}
-progress::-webkit-progress-bar {
-  background-color: #91abee;
-}
-progress::-webkit-progress-value {
-  background-color: #305bc9;
-}
-progress[value="100"]::-webkit-progress-bar {
-  background-color: #305bc9;
-}
-progress::-webkit-progress-value {
-  background-color: #305bc9;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-} */
-/* .prg-vrt{
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-} */
 
 progress {
   -webkit-appearance: none;
@@ -173,12 +145,7 @@ progress {
   height: 6px;
   
 }
-/* .progresss
-{
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-} */
+
 
 progress::-webkit-progress-bar {
 
@@ -197,15 +164,7 @@ progress::-webkit-progress-value {
 .progress2{
   width: 2000px;
 }
-/* .timeline:before {
-  content: "";
-  position: absolute;
-  
-  width: 4px;
-  height: 100%;
-  
-  background-color: #305bc9;
-} */
+
 .timeline:before ::-webkit-progress-bar{
     content: "";
     position: absolute;
@@ -227,7 +186,7 @@ progress::-webkit-progress-value {
   position: relative;
   width: 50%;
   margin-top: 150px;
-  padding: 20px 40px;
+  padding: 20px 80px;
   box-sizing: border-box;
 }
 .timeline ul li:nth-child(odd) {
@@ -273,13 +232,13 @@ progress::-webkit-progress-value {
 }
 .timeline ul li:nth-child(odd) .illustration {
   position: absolute;
-  top: -10px;
-  right: -350px;
+  top: -50px;
+  right: -450px;
 }
 .timeline ul li:nth-child(even) .illustration {
   position: absolute;
-  top: -20px;
-  left: -350px;
+  top: -40px;
+  left: -450px;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -290,17 +249,7 @@ progress::-webkit-progress-value {
   height: "150px";
 }
 
-/* .schedule .next{
-    background-color: #305BC9;
-    width: 30%;
-    height: 25px;
-    margin-top: 100px;
-    margin-left: 35%;
-    margin-right: 35%;
-    border-radius: 20px;
-    padding: 0;
 
-} */
 #btn3 {
   background-color: #305bc9;
   width: 30%;
@@ -315,8 +264,8 @@ progress::-webkit-progress-value {
 }
 
 img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
 }
 a {
   color: white;
@@ -325,7 +274,7 @@ a {
 .results {
   display: grid;
   background-color: #305bc9;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-top: 50px;
   margin-bottom: 25px;
 
@@ -338,14 +287,20 @@ a {
   margin-bottom: 25px;
 }
 .white {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 50px;
+  /* margin-bottom: 15px; */
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: white;
   color: #305bc9;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.5);
   padding: 25px;
   width: 80%;
+}
+.trophy{
+  padding-right: 0;
+  right: -40px;
 }
 @media (max-width: 1000px) {
   .top {
@@ -362,12 +317,29 @@ a {
     height: "150px";
   }
 }
+@media(max-width: 990px){
+  .date1, .btn1, .date22, .btn22{
+    left: -1%;
+  }
+  
+  .date2, .btn2, .date12,.btn12{
+    right:-2%;
+  }
+  
+  .trophy img{
+    display:none ;
+  }
+  
+}
 @media (max-width: 767px) {
   .title .row h1 {
     text-align: center;
     font-size: 50px;
   }
-  
+  .timelineHead{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .top {
     width: 100%;
   }
@@ -433,7 +405,9 @@ a {
     margin-right: 10%;
   }
   .white {
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 90%;
   }
   .p2 {
     left: 2%;
@@ -451,9 +425,18 @@ a {
   }
   #btn3{
     font-size: medium;
+    width: 150px;
     margin-bottom: 50px;
-   
+   margin-left: 100px;
     
   }
+  .date1 , .btn1{
+    left: -2%;
+
+  }
+  .date22, .btn22{
+    left: -2%;
+  }
+
   
 }
