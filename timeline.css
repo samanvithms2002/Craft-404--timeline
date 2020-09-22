@@ -258,14 +258,14 @@ progress::-webkit-progress-value {
 #btn3 {
   background-color: #305bc9;
   width: 30%;
-  height: 25px;
+  height: 40px;
   margin-top: 100px;
   margin-left: 35%;
   /* margin-right: 30%; */
   border-radius: 20px;
   padding-bottom: 5px;
   border: none;
-  font-size: medium;
+  font-size: larger;
 }
 
 img {
